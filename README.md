@@ -3,7 +3,7 @@
     <i>These are my personal config files that I use.</i>
 </p>
 <ul>
-    <li>OS - Cachy Os</li>
+    <li>OS - fedora</li>
     <li>Terminal - Kitty</li>
     <li>File Manager - Dolphin</li>
     <li>Status bar - waybar</li>
