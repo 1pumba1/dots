@@ -1,0 +1,27 @@
+
+foreground #cdd6f4 
+background #1e1e2e
+cursor #cdd6f4
+
+scrollback_pager nvim  +"source $HOME/.config/kitty/nvim/init.lua" --clean
+map ctrl+shift+space show_scrollback
+
+font_size 11
+adjust_line_height  100%
+allow_remote_control yes
+
+window_padding_width 10
+
+confirm_os_window_close 0 
+paste_action 0
+shell_integration no-cursor
+enable_audio_bell no
+
+hide_window_decorations yes
+placement_strategy top
+
+
+font_family      MesloLGL Nerd Font Mono Regular
+bold_font        MesloLGL Nerd Font Mono Bold
+italic_font      MesloLGL Nerd Font Mono Italic
+bold_italic_font MesloLGL Nerd Font Mono Bold Italic
