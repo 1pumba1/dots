@@ -1,0 +1,75 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "margin": "0",
+    "spacing": 2,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "hyprctl dispatch workspace {name}",
+        "format-icons": {
+            "1": "░1░",
+            "2": "░2░",
+            "3": "░3░",
+            "4": "░4░",
+            "5": "░5░",
+            "urgent": "█!█",
+            "active": "█*█",
+            "default": "▒▒▒"
+        }
+    },
+
+    "clock": {
+        "format": "█ {} █",
+        "format-alt": "█ {:%d-%m-%Y} █",
+        "tooltip-format": "┌────────────┐\n│  GAME OVER  │\n│  CONTINUE?  │\n└────────────┘",
+        "interval": 1,
+        "timezone": "Europe/Moscow"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "▒▒▒▒",
+        "format-icons": ["▂▂", "▄▄", "██"],
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5"
+    },
+
+    "network": {
+        "format-wifi": "▀▀ {signalStrength}%",
+        "format-ethernet": "══",
+        "format-disconnected": "▒▒",
+        "tooltip-format": "NETWORK: {essid}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "interval": 1,
+        "on-click": "kitty htop"
+    },
+
+    "memory": {
+        "format": "RAM: {percentage}%",
+        "interval": 1,
+        "on-click": "kitty htop"
+    },
+
+    "temperature": {
+        "format": "TEMP: {temperatureC}°C",
+        "format-icons": ["▂", "▄", "▆", "█", "██"],
+        "critical-threshold": 80,
+        "on-click": "kitty sensors"
+    },
+
+    "tray": {
+        "icon-size": 14,
+        "spacing": 4
+    }
+}
