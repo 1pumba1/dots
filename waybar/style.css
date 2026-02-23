@@ -10,33 +10,18 @@ window#waybar {
     background: #000000;
     color: #cccccc;
     border: 3px solid #666666;
-
-    /* Убираем внешние отступы */
     margin: 0;
-
-    /* Добавляем внутренние отступы */
     padding: 4px 8px;
-
     box-shadow: 8px 8px 0 #333333;
-
-    /* ПЛАВНЫЕ СКРУГЛЕНИЯ */
     border-radius: 20px;
 }
 
-/* Контейнер для левых модулей */
 #workspaces {
 background: #111111;
 border: 3px solid #777777;
 margin: 0 2px 0 0;
 padding: 2px;
-
-/* Убираем тень у контейнера */
-/* box-shadow: 5px 5px 0 #333333; */
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 16px;
-
-/* Фиксируем высоту */
 min-height: 28px;
 }
 
@@ -47,51 +32,29 @@ color: #cccccc;
 border: 2px solid #666666;
 margin: 2px;
 min-width: 28px;
-
-/* Убираем тень у кнопок */
-/* box-shadow: 3px 3px 0 #333333; */
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 12px;
-
-/* Убираем стандартные отступы кнопок */
 padding: 0 8px;
 min-height: 24px;
 }
 
-/* АКТИВНЫЙ WORKSPACE - ЯРКО-БЕЛЫЙ */
 #workspaces button.focused {
 background: #ffffff;
 color: #000000;
 border: 2px solid #aaaaaa;
-
-/* Убираем тень у активной кнопки */
-/* box-shadow: 3px 3px 0 #444444; */
-
 border-radius: 12px;
 }
 
-/* ЧАСЫ - ЦЕНТРАЛЬНЫЙ ЭЛЕМЕНТ */
 #clock {
 color: #ffffff;
 background: #1a1a1a;
 border: 3px solid #aaaaaa;
 padding: 0 20px;
 font-size: 13px;
-
-/* Убираем тень у часов */
-/* box-shadow: 6px 6px 0 #444444; */
-
 margin: 0 2px;
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 24px;
-
-/* Фиксируем высоту */
 min-height: 28px;
 }
 
-/* ПРАВЫЕ МОДУЛИ - ЕДИНЫЙ СТИЛЬ */
 #pulseaudio, #network, #cpu, #memory, #temperature, #tray, #battery, #bluetooth {
 padding: 0 10px;
 margin: 0 2px;
@@ -99,104 +62,70 @@ background: #111111;
 border: 2px solid #777777;
 min-width: 40px;
 font-size: 11px;
-
-/* Убираем тени у всех правых модулей */
-/* box-shadow: 5px 5px 0 #333333; */
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 14px;
-
-/* Фиксируем высоту */
 min-height: 28px;
 }
 
-/* CPU */
 #cpu {
 color: #dddddd;
 border-color: #888888;
-/* box-shadow: 5px 5px 0 #3a3a3a; */
 }
 
-/* MEMORY */
 #memory {
 color: #dddddd;
 border-color: #888888;
-/* box-shadow: 5px 5px 0 #3a3a3a; */
 }
 
-/* TEMPERATURE */
 #temperature {
 color: #dddddd;
 border-color: #888888;
-/* box-shadow: 5px 5px 0 #3a3a3a; */
 }
 
 #temperature.critical {
 color: #ffffff;
 border-color: #aaaaaa;
 background: #222222;
-/* box-shadow: 5px 5px 0 #444444; */
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 14px;
 }
 
-/* PULSEAUDIO */
 #pulseaudio {
 color: #dddddd;
 border-color: #888888;
-/* box-shadow: 5px 5px 0 #3a3a3a; */
 }
 
 #pulseaudio.muted {
 color: #777777;
 border-color: #555555;
 background: #1a1a1a;
-/* box-shadow: 5px 5px 0 #2a2a2a; */
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 14px;
 }
 
-/* NETWORK */
 #network {
 color: #dddddd;
 border-color: #888888;
-/* box-shadow: 5px 5px 0 #3a3a3a; */
 }
 
 #network.disconnected {
 color: #777777;
 border-color: #555555;
 background: #1a1a1a;
-/* box-shadow: 5px 5px 0 #2a2a2a; */
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 14px;
 }
 
-/* TRAY */
 #tray {
 background: #111111;
 border: 2px solid #999999;
 padding: 0 10px;
-/* box-shadow: 5px 5px 0 #3a3a3a; */
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 14px;
-
 min-height: 28px;
 }
 
 #tray > .needs-attention {
 background-color: #666666;
 border: 2px solid #cccccc;
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 10px;
 }
 
-/* BATTERY */
 #battery {
 color: #dddddd;
 border-color: #888888;
@@ -206,9 +135,6 @@ border-color: #888888;
 color: #ffffff;
 border-color: #aaaaaa;
 background: #222222;
-/* box-shadow: 5px 5px 0 #444444; */
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 14px;
 }
 
@@ -216,13 +142,9 @@ border-radius: 14px;
 color: #ffffff;
 border-color: #cccccc;
 background: #2a2a2a;
-/* box-shadow: 5px 5px 0 #555555; */
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 14px;
 }
 
-/* BLUETOOTH */
 #bluetooth {
 color: #dddddd;
 border-color: #888888;
@@ -237,54 +159,33 @@ border-color: #aaaaaa;
 color: #777777;
 border-color: #555555;
 background: #1a1a1a;
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 14px;
 }
 
-/* CUSTOM MENU */
 #custom-menu {
 padding: 0 14px;
 margin: 0 2px;
 background: #1a1a1a;
 border: 2px solid #999999;
 font-size: 13px;
-
-/* Убираем тень */
-/* box-shadow: 5px 5px 0 #333333; */
-
 color: #ffffff;
 border-color: #aaaaaa;
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 20px;
-
-/* Фиксируем высоту */
 min-height: 28px;
 }
 
-/* CUSTOM POWER */
 #custom-power {
 padding: 0 14px;
 margin: 0 2px;
 background: #1a1a1a;
 border: 2px solid #aaaaaa;
 font-size: 13px;
-
-/* Убираем тень */
-/* box-shadow: 5px 5px 0 #444444; */
-
 color: #ffffff;
 border-color: #bbbbbb;
-
-/* ПЛАВНЫЕ СКРУГЛЕНИЯ */
 border-radius: 20px;
-
-/* Фиксируем высоту */
 min-height: 28px;
 }
 
-/* TOOLTIP */
 tooltip {
     background: #000000;
     border: 3px solid #999999;
@@ -297,7 +198,6 @@ tooltip label {
     margin: 8px 12px;
 }
 
-/* ЭФФЕКТ ПРИ НАВЕДЕНИИ */
 #workspaces button:hover,
 #clock:hover,
 #pulseaudio:hover,
@@ -313,14 +213,9 @@ tooltip label {
 background: #2a2a2a;
 color: #ffffff;
 border-color: #bbbbbb;
-
-/* Убираем тень при наведении */
-/* box-shadow: 3px 3px 0 #444444; */
-
 border-radius: 14px;
 }
 
-/* Убираем возможные артефакты */
 #window {
 margin: 0;
 padding: 0;
